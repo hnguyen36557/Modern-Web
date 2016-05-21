@@ -13,11 +13,9 @@
 	@endif
 	@if (count($errors) > 0)
 		<section class="info-box fail">
-			<ul>
 				@foreach ($errors->all() as $error )
 					<li>{{ $error }}</li>
 				@endforeach
-			</ul>
 		</section>
 	@endif
 	@if(Session::has('success'))
